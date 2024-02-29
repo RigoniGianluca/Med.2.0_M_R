@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="125dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordInput"
+            android:layout_width="320"
+            android:layout_height="40dp"
+            android:hint="Password"
+            app:barrierMargin="10dp"
+            app:textInputLayoutFocusedRectEnabled="false"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="368dp"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameInput"
+            android:layout_width="320"
+            android:layout_height="40dp"
+            android:hint="Username"
+            app:barrierMargin="10dp"
+            app:textInputLayoutFocusedRectEnabled="false"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="278dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="456dp"
+            android:layout_height="49dp"
+            android:text="Login"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="684dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="381dp"
+        android:layout_height="62dp"
+        android:text="Bentornato :)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:fontFamily="@font/basic"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        tools:layout_editor_absoluteY="80dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
