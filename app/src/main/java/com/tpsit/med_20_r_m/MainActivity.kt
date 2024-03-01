@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         val loginbutton: Button = findViewById(R.id.loginButton)
 
         loginbutton.setOnClickListener {
-            val username = usernameText.text.toString()
-            val password = usernameText.text.toString()
+            var username = usernameText.text.toString()
+            var password = usernameText.text.toString()
         }
     }
 }
