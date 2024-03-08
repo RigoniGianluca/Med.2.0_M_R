@@ -4,9 +4,8 @@ import retrofit2.Call
 import retrofit2.http.*
 
 interface ApiService {
-    @POST("add_user")
-    fun RegisterUser(@Body user: User): Call<Void>
-
-    /*@POST("login")
-    fun login(@Body credenziali: CredenzialiLogin): Call<Void>*/
+    @POST("register")
+    fun registerUser(
+        @Body user: User
+    ): Call<UserResponse>
 }
