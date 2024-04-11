@@ -1,6 +1,5 @@
-package com.tipsit.med_webservice;
+package com.example.med_webservice;
 
-import com.example.med_webservice.api.DB.DB;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
